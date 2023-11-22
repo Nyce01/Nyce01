@@ -1,0 +1,61 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+
+
+
+
+                  - nome: Carregar um artefato de construção
+  usa: ações/upload-artifact@v3.1.3
+  com:Derrubar sites
+  
+    # Nome do artefato
+    nome: # opcional, o padrão é artefato
+    xvideos.com
+    # Um arquivo, diretório ou padrão curinga que descreve o que carregar
+    caminho:https://www.xvideos.com/
+    # O comportamento desejado se nenhum arquivo for encontrado usando o caminho fornecido.
+Opções disponíveis:
+  warning: Emite um aviso, mas não falha na ação
+  erro: Falha na ação com uma mensagem de erro
+  ignorar: Não emita nenhum aviso ou erro, a ação não falha
+
+    if-no-files-found: # opcional, o padrão é avisar
+    # Duração após a qual o artefato irá expirar em dias. 0 significa usar retenção padrão.
+Mínimo 1 dia. Máximo de 90 dias, a menos que seja alterado na página de configurações do repositório.
+
+    dias de retenção: # opcional
+          
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
